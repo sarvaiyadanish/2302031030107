@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* header started */
+.header{
+    background-image: url(./Meditation-Mindfulness-1-1024x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 76rem;
+}
+.himg{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.4rem;
+    border-radius: 2rem;
+}
+.header2{
+    font-size: 3rem;
+}
+.header1{
+    display: flex;
+    margin: 1rem;
+    padding: 2rem;
+}
+.header1 ul{
+    display: flex;
+    margin-left: 29rem;
+    list-style: none;
+}
+.header3 h1 a{
+    text-decoration: none !important;
+}
+.header3 button a{
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+.header1 ul li a{
+    color: black;
+    text-decoration: none;
+}
+.header1 ul li{
+    padding-left: 2rem;
+    font-size: 1.60rem;
+    margin-top: 0.7rem;
+    text-transform: uppercase;
+}
+.header3{
+    margin-top: 60rem;
+    display: flex;    
+}
+.header3 h1{
+    font-size: 3rem;
+    
+    margin-left:5rem;
+    margin-top: 0.8rem;
+}
+.header3 button{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-left:40rem;
+    background-color:rgb(46, 60, 138);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+/* header started */
+/* about started */
+.about{
+    padding-top: 2rem;
+    background-color: rgb(247, 245, 245);
+    height: 50rem;
+}
+.about1{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;  
+}
+.about2{
+    display: flex;
+}
+.about3{
+    padding: 0rem 5rem;
+}
+.about3 ul{
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+.about3 ul li{
+    padding-bottom: 2rem;
+}
+.about3 p{
+   font-size: 1.40rem;
+   padding-bottom: 4rem;
+}
+.about3 h3{
+    font-size: 2.34rem;
+    padding-bottom: 4rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.about5 img{
+    width: 60rem;
+    height: 80vh;
+}
+/* about ended */
+
+.section-title h2:before, .section-title h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: red ;
+    display: inline-block;
+  } 
+  
+  .section-title h2:before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-title h2:after {
+    margin: 0 0 10px 15px;
+  }
+

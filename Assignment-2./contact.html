@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='about.css'>
+    <script src='main.js'></script>
+    <style>
+        .inputm{
+                width: 100% !important;
+                background-color: #474545;
+              min-height: 10pc;
+              color: white;
+              }
+        .div {
+          background-color: rgba(239, 240, 243, 1);
+          display: flex;
+          flex-direction: column;
+          padding: 80px;
+        }
+        @media (max-width: 991px) {
+          .div {
+            padding: 0 20px;
+          }
+        }
+        .div-2 {
+          display: flex;
+          padding-right: 80px;
+          justify-content: space-between;
+          gap: 20px;
+          margin: 11px 16px 0;
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+            margin-right: 10px;
+            flex-wrap: wrap;
+            padding-right: 20px;
+          }
+        }
+        .img {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 75px;
+          fill: #050506;
+          align-self: end;
+          margin-top: 135px;
+        }
+        @media (max-width: 991px) {
+          .img {
+            margin-top: 40px;
+          }
+        }
+        .div-3 {
+          flex-grow: 1;
+          flex-basis: auto;
+        }
+        @media (max-width: 991px) {
+          .div-3 {
+            max-width: 100%;
+          }
+        }
+        .div-4 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-4 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 80%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .div-5 {
+          display: flex;
+          padding-left: 20rem;
+          flex-grow: 1;
+          flex-direction: column;
+          align-items: center;
+        }
+        .img-2 {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 232px;
+          fill: #1a1b1c;
+          max-width: 100%;
+        }
+        .img-3 {
+          aspect-ratio: 12.5;
+          object-fit: auto;
+          object-position: center;
+          width: 398px;
+          fill: #242525;
+          margin-top: 34px;
+        }
+        .img-4 {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 75px;
+          padding-left: 8rem;
+          fill: #1e2125;
+          align-self: start;
+          margin: 44px 0 0 14px;
+        }
+        @media (max-width: 991px) {
+          .img-4 {
+            margin: 40px 0 0 10px;
+          }
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 20%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 100%;
+          }
+        }
+        .img-5 {
+          aspect-ratio: 11.11;
+          object-fit: auto;
+          object-position: center;
+          width: 98px;
+          fill: #2b2c2d;
+          margin-top: 135px;
+          flex-grow: 1;
+        }
+        @media (max-width: 991px) {
+          .img-5 {
+            margin-top: 40px;
+          }
+        }
+        .div-6 {
+          display: flex;
+          gap: 15px;
+          margin: 17px 16px 0;
+        }
+        @media (max-width: 991px) {
+          .div-6 {
+            margin-right: 10px;
+            flex-wrap: wrap;
+          }
+        }
+        .img-6 {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 371px;
+          fill: #3b4857;
+          stroke-width: 1px;
+          stroke: #fff;
+          border-color: rgba(255, 255, 255, 1);
+          border-style: solid;
+          border-width: 1px;
+        }
+        .img-7 {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 371px;
+          fill: #3b4857;
+          stroke-width: 1px;
+          stroke: #fff;
+          border-color: rgba(255, 255, 255, 1);
+          border-style: solid;
+          border-width: 1px;
+        }
+        .img-8 {
+          aspect-ratio: 8.33;
+          object-fit: auto;
+          object-position: center;
+          width: 371px;
+          fill: #3b4857;
+          stroke-width: 1px;
+          stroke: #fff;
+          border-color: rgba(255, 255, 255, 1);
+          border-style: solid;
+          border-width: 1px;
+        }
+        .img-9 {
+          aspect-ratio: 5.88;
+          object-fit: auto;
+          object-position: center;
+          width: 69px;
+          fill: #283646;
+          margin: 22px 0 0 16px;
+        }
+        @media (max-width: 991px) {
+          .img-9 {
+            margin-left: 10px;
+          }
+        }
+        .img-10 {
+          aspect-ratio: 6.25;
+          object-fit: auto;
+          object-position: center;
+          width: 100%;
+          fill: #3b4857;
+          stroke-width: 1px;
+          stroke: #fefeff;
+          border-color: rgba(254, 254, 255, 1);
+          border-style: solid;
+          border-width: 1px;
+          margin: 15px 16px 0;
+        }
+        @media (max-width: 991px) {
+          .img-10 {
+            max-width: 100%;
+            margin-right: 10px;
+          }
+        }
+        .img-11 {
+          aspect-ratio: 4.35;
+          object-fit: auto;
+          object-position: center;
+          width: 181px;
+          fill: #3a86ff;
+          align-self: center;
+          margin-top: 30px;
+          max-width: 100%;
+        }
+      </style>
+      
+</head>
+<body>
+     <!-- header started -->
+     <header class="header">
+        <nav  class="header1">
+            <img class="himg" src="./Screenshot 2024-02-28 113659.jpg" alt="logo"/>
+            <h1  class="header2">MINDFUL</h1>
+            <ul > 
+                <li><a href="./mindful.html">HOME</a></li>
+               <li><a href="./aboutus.html">ABOUTUS</a></li>
+               <li><a href="./fetures.html">FEATURED PRODUCTS</a></li>
+               <li><a href="./audio.html">Audio Meditation</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+             </ul>
+        </nav>
+    </header>
+     <!-- header ended -->
+    <!-- contact started -->
+    <div class="div">
+        <div class="div-2">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c5b8164b9cdf81629e6756708f9250536933ae76515bcaf9106f100ed8edfab?"
+            class="img"
+          />
+          <div class="div-3">
+            <div class="div-4">
+              <div class="column">
+                <div class="div-5">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc42969ef9bab5cdbe91206a4051a64c5877d74b7313dd8763d5463a905c67a4?"
+                    class="img-2"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8730c3afc1fee568c65de3ed8d5f1d706d99f8320580186f062443e2519a66c2?"
+                    class="img-3"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b3af003c09f55d7d801e87ddafa8469bc62a25a9ddfa5849890032c5a751e7df?"
+                    class="img-4"
+                  />
+                </div>
+              </div>
+              <div class="column-2">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/90ec32ef99a8a29a6a22a2483661f4554afe81d4d50f03951ff305971f40bc36?"
+                  class="img-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-6">
+            <input  required id="email" name="email" class="inputm" type="email"/>
+    
+            <input  required id="email" name="email" class="inputm" type="email"/>
+            <input  required id="email" name="email" class="inputm" type="email"/>
+            
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/449755cf83da603aeb722f40eb30b07b97056258713e3f1754c83dae99a6b60e?"
+          class="img-9"
+        />
+        <input  required id="email" name="email" class="inputm" type="email"/>
+    
+      </div>
+      <!-- foter started-->
+      <div class="footer">
+        <div class="footer1">
+          <h4> Mindful</h4>
+          <p>Home</p>
+          <p>Aboutus</p>
+          <p>Featured Products</p>
+          <p>Audio Meditations</p>
+          <p>Contact</p>
+        </div>
+        <div class="footer1">
+          <h4> Address</h4>
+          <p>bage- rehmat ashiyana <br/>
+            park nr. jagruti school janpath <br/>
+            hotel sarkhej , Ahmedabad <br/>
+          </p>
+          
+        </div>
+        <div class="footer1">
+          <h4> Social Media</h4>
+          <p>Twitter</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>YouTube</p>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+       <!-- foter ended -->
+</body>
+</html>
+
+ 
